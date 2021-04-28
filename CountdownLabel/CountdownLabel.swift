@@ -157,7 +157,7 @@ public class CountdownLabel: LTMorphingLabel {
         self.fromDate = fromDate
         
         targetTime = targetDate.timeIntervalSince(fromDate as Date)
-        currentTime = targetDate.timeIntervalSince(fromDate as Date) 
+        currentTime = targetDate.timeIntervalSince(fromDate as Date)
         diffDate = date1970.addingTimeInterval(targetTime)
         
         updateLabel()
@@ -393,7 +393,7 @@ public class CountdownAttributedText: NSObject {
     internal let text: String
     internal let replacement: String
     internal let attributes: [NSAttributedString.Key: Any]?
-
+   
     public init(text: String, replacement: String, attributes: [NSAttributedString.Key: Any]? = nil) {
         self.text = text
         self.replacement = replacement
